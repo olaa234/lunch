@@ -1,3 +1,26 @@
+
+body {
+    background: url('/assets/images/pexels-fabien-burgue-2052521.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: rgb(255, 255, 255);
+    font-family: 'Lato';
+}
+
+/*navbar*/
+.bg-color {
+    background: rgba(0, 0, 0, 0.731);
+    color: rgb(253, 253, 253) !important;
+    /* use important to override link colors for <a> elements */
+}
+
+.fa-solid.fa-house { 
+    font-size: 32px;
+    line-height: 0.8;
+  }
+
+
+
 /*main*/
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -157,6 +180,7 @@ h6 {
     .display-4 {
         font-size: 3rem;
     }
+
 }
 
 .flex-auto {
@@ -171,6 +195,8 @@ h6 {
     .h-md-250 {
         height: 250px;
     }
+
+
 }
 
 /* Pagination */
