@@ -1,4 +1,3 @@
-
 body {
     background: url('/assets/images/pexels-fabien-burgue-2052521.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -7,40 +6,21 @@ body {
     font-family: 'Lato';
 }
 
-/*navbar*/
+
+/*===========Navbar===========*/
 .bg-color {
-    background: rgba(0, 0, 0, 0.731);
-    color: rgb(253, 253, 253) !important;
+    background: rgba(0, 0, 0, 0.991);
     /* use important to override link colors for <a> elements */
 }
 
-.fa-solid.fa-house { 
-    font-size: 32px;
-    line-height: 0.8;
-  }
 
-
-
-/*main*/
+/*===========main===========*/
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-}
-
-@media (min-width: 992px) {
-    .rounded-lg-3 {
-        border-radius: .3rem;
-    }
-}
-
-
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
 }
 
 .b-example-divider {
@@ -80,8 +60,8 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
-/*features*/
 
+/*===========Features===========*/
 .feature-icon {
     width: 4rem;
     height: 4rem;
@@ -123,9 +103,10 @@ body {
     background-size: cover;
 }
 
-/*news*/
 
-/* stylelint-disable selector-list-comma-newline-after */
+/*===========News===========*/
+
+/*===========stylelint-disable selector-list-comma-newline-after===========*/
 
 .blog-header {
     border-bottom: 1px solid #e5e5e5;
@@ -159,9 +140,9 @@ h6 {
 
 .custom-cards img {
 
-    width:400px;
-    height:250px;
-    margin-left:15px;
+    width: 400px;
+    height: 250px;
+    margin-left: 15px;
     float: left;
     margin: 20px;
     padding: 40px;
@@ -176,12 +157,6 @@ h6 {
     padding: 50px;
 }
 
-@media (min-width: 768px) {
-    .display-4 {
-        font-size: 3rem;
-    }
-
-}
 
 .flex-auto {
     flex: 0 0 auto;
@@ -191,22 +166,14 @@ h6 {
     height: 250px;
 }
 
-@media (min-width: 768px) {
-    .h-md-250 {
-        height: 250px;
-    }
 
-
-}
-
-/* Pagination */
+/*===========Pagination===========*/
 .blog-pagination {
     margin-bottom: 4rem;
 }
 
-/*
-   * Blog posts
-   */
+
+/*===========Blog posts===========*/
 .blog-post {
     margin-bottom: 4rem;
 }
@@ -220,9 +187,8 @@ h6 {
     color: #727272;
 }
 
-/*
-   * Footer
-   */
+
+/*===========Footer===========*/
 .blog-footer {
     padding: 2.5rem 0;
     color: #727272;
@@ -233,4 +199,32 @@ h6 {
 
 .blog-footer p:last-child {
     margin-bottom: 0;
+}
+
+
+/*================Media Query================*/
+
+@media (min-width: 992px) {
+
+    .rounded-lg-3 {
+        border-radius: .3rem;
+    }
+
+    .navbar li {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+
+    .h-md-250 {
+        height: 250px;
+    }
+
 }
