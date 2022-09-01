@@ -1,55 +1,45 @@
-body {
-    background: url('/assets/images/pexels-fabien-burgue-2052521.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
-    color: rgb(255, 255, 255);
-    font-family: 'Lato';
-}
 
-
-/*===========Navbar===========*/
-.bg-color {
-    background: rgba(0, 0, 0, 0.991);
-    /* use important to override link colors for <a> elements */
-}
-
-
-/*===========main===========*/
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-}
+  }
 
-.b-example-divider {
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
     height: 3rem;
     background-color: rgba(0, 0, 0, .1);
     border: solid rgba(0, 0, 0, .15);
     border-width: 1px 0;
     box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-}
+  }
 
-.b-example-vr {
+  .b-example-vr {
     flex-shrink: 0;
     width: 1.5rem;
     height: 100vh;
-}
+  }
 
-.bi {
+  .bi {
     vertical-align: -.125em;
     fill: currentColor;
-}
+  }
 
-.nav-scroller {
+  .nav-scroller {
     position: relative;
     z-index: 2;
     height: 2.75rem;
     overflow-y: hidden;
-}
+  }
 
-.nav-scroller .nav {
+  .nav-scroller .nav {
     display: flex;
     flex-wrap: nowrap;
     padding-bottom: 1rem;
@@ -58,173 +48,5 @@ body {
     text-align: center;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
-}
+  }
 
-
-/*===========Features===========*/
-.feature-icon {
-    width: 4rem;
-    height: 4rem;
-    border-radius: .75rem;
-}
-
-.icon-link>.bi {
-    margin-top: .125rem;
-    margin-left: .125rem;
-    fill: currentcolor;
-    transition: transform .25s ease-in-out;
-}
-
-.icon-link:hover>.bi {
-    transform: translate(.25rem);
-}
-
-.icon-square {
-    width: 3rem;
-    height: 3rem;
-    border-radius: .75rem;
-}
-
-.text-shadow-1 {
-    text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25);
-}
-
-.text-shadow-2 {
-    text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25);
-}
-
-.text-shadow-3 {
-    text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25);
-}
-
-.card-cover {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
-
-
-/*===========News===========*/
-
-/*===========stylelint-disable selector-list-comma-newline-after===========*/
-
-.blog-header {
-    border-bottom: 1px solid #e5e5e5;
-}
-
-.blog-header-logo {
-    font-family: "Playfair Display", Georgia, "Times New Roman", serif
-        /*rtl:Amiri, Georgia, "Times New Roman", serif*/
-    ;
-    font-size: 2.25rem;
-}
-
-.blog-header-logo:hover {
-    text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Playfair Display", Georgia, "Times New Roman", serif
-        /*rtl:Amiri, Georgia, "Times New Roman", serif*/
-    ;
-}
-
-.display-4 {
-    font-size: 2.5rem;
-}
-
-.custom-cards img {
-
-    width: 400px;
-    height: 250px;
-    margin-left: 15px;
-    float: left;
-    margin: 20px;
-    padding: 40px;
-
-}
-
-.custom-cards p {
-
-    text-align: justify;
-    font-size: 20px;
-    color: #000000;
-    padding: 50px;
-}
-
-
-.flex-auto {
-    flex: 0 0 auto;
-}
-
-.h-250 {
-    height: 250px;
-}
-
-
-/*===========Pagination===========*/
-.blog-pagination {
-    margin-bottom: 4rem;
-}
-
-
-/*===========Blog posts===========*/
-.blog-post {
-    margin-bottom: 4rem;
-}
-
-.blog-post-title {
-    font-size: 2.5rem;
-}
-
-.blog-post-meta {
-    margin-bottom: 1.25rem;
-    color: #727272;
-}
-
-
-/*===========Footer===========*/
-.blog-footer {
-    padding: 2.5rem 0;
-    color: #727272;
-    text-align: center;
-    background-color: #f9f9f9;
-    border-top: .05rem solid #e5e5e5;
-}
-
-.blog-footer p:last-child {
-    margin-bottom: 0;
-}
-
-
-/*================Media Query================*/
-
-@media (min-width: 992px) {
-
-    .rounded-lg-3 {
-        border-radius: .3rem;
-    }
-
-    .navbar li {
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-}
-
-
-@media (min-width: 768px) {
-
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
-
-    .h-md-250 {
-        height: 250px;
-    }
-
-}

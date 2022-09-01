@@ -17,59 +17,48 @@
 
   <!-- Custom styles for this template -->
   <link rel="stylesheet" href="./assets/css/custom.css">
+  <link rel="stylesheet" href="./assets/css/offcanvas.css">
 </head>
 
-<body>
+<body class="bg-light">
 
-  <nav class="navbar navbar-expand-md fixed-top bg-color">
-    <div class="container-fluid justify-content: space-between">
-      <div> 
-        <a class="navbar-brand text-white" href="index.html"><i class="fas fa-home fa-lg"></i></a>
-      </div>
-      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark px-5" aria-label="Main navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand text-success" href="index.html"><i class="fas fa-home fa-lg"></i></a>
+      <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav nav-pills">
+
+      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a href="/links/register.html" class="nav-link font-weight-bold nav-link text-white">Join</a>
+            <a class="nav-link active" aria-current="page" href="/links/register.html">Join</a>
           </li>
           <li class="nav-item">
-            <a href="/links/contact.html" class="nav-link font-weight-bold nav-link text-white">Contact</a>
+            <a class="nav-link" href="/links/contact.html">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a href="/links/donate.html" class="nav-link font-weight-bold nav-link text-white">Donate</a>
+            <a class="nav-link" href="https://donate.stripe.com/test_5kAfZq49T4uQcBqaEE">Donate</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle font-weight-bold nav-link text-white" href="#"
-              id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Mission
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Mission</a>
+            <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="/links/our_mission.html">Our Mission</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="/links/climate_awarness.html">Climate Awarness</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="/links/news.html">News Blog</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-
+              <li><a class="dropdown-item" href="/links/climate_awarness.html">Climate Awareness</a></li>
+              <li><a class="dropdown-item" href="/links/news.html">News</a></li>
               <li><a class="dropdown-item" href="/links/project_green.html">Project Green</a></li>
-
             </ul>
           </li>
         </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
     </div>
   </nav>
 
-
+  <hr>
 
   <!--Main Section-->
   <main>
@@ -83,7 +72,8 @@
           popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
           extensive prebuilt components, and powerful JavaScript plugins.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4"><a href="/links/about.html">Read
+          <button type="button" class="btn btn-outline-secondary btn-lg px-3 bg-warning"><a
+              href="/links/about.html">Read
               More</a></button>
 
         </div>
@@ -92,150 +82,61 @@
     </div>
   </main>
 
+  <hr>
+
   <!--Features-->
   <div class="container px-4 py-5" id="custom-cards">
-    <h2 class="pb-2 border-bottom">Custom cards</h2>
 
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-          style="background-image: url('unsplash-photo-1.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
-                  class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em">
-                  <use xlink:href="#geo-fill" /></svg>
-                <small>Earth</small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em">
-                  <use xlink:href="#calendar3" /></svg>
-                <small>3d</small>
-              </li>
-            </ul>
+
+      <div class="col">        
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">          
+          <img src="./assets/images/drinkingtap.jpg" alt="renewable" class="img-top">
+          <div class="d-flex flex-column h-10 p-5 pb-3 text-shadow-1">
+            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Rural development</h2>
           </div>
         </div>
       </div>
 
       <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-          style="background-image: url('unsplash-photo-2.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h2>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
-                  class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em">
-                  <use xlink:href="#geo-fill" /></svg>
-                <small>Pakistan</small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em">
-                  <use xlink:href="#calendar3" /></svg>
-                <small>4d</small>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-          style="background-image: url('unsplash-photo-3.jpg');">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+          <img src="./assets/images/rewable.jpg" alt="earth" class="img-top">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h2>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
-                  class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em">
-                  <use xlink:href="#geo-fill" /></svg>
-                <small>California</small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em">
-                  <use xlink:href="#calendar3" /></svg>
-                <small>5d</small>
-              </li>
-            </ul>
+            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Renewable Energy</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+          <img src="./assets/images/treeplanting.jpg" alt="treeplanting" class="img-top">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Plant to save our planet</h2>
           </div>
         </div>
       </div>
     </div>
   </div>
 
+  <hr>
+
   <!--Footer Section-->
 
   <div class="container">
-    <footer class="py-5">
-      <div class="row">
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-          </ul>
-        </div>
-
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-          </ul>
-        </div>
-
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-          </ul>
-        </div>
-
-        <div class="col-md-5 offset-md-1 mb-3">
-          <form>
-            <h5>Subscribe to our newsletter</h5>
-            <p>Monthly digest of what's new and exciting from us.</p>
-            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-              <label for="newsletter1" class="visually-hidden">Email address</label>
-              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-              <button class="btn btn-primary" type="button">Subscribe</button>
-            </div>
-          </form>
-        </div>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap" /></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Ola & Seun, HI-Project</span>
       </div>
 
-      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-        <p>&copy; 2022 Hyper Island Final Project, Inc. All rights reserved by Olabinjo Muyiwa.</p>
-        <ul class="list-unstyled d-flex">
-          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#twitter" /></svg></a></li>
-          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#instagram" /></svg></a></li>
-          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#facebook" /></svg></a></li>
-        </ul>
-      </div>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-white" href="https://www.twitter.com"><i class="fab fa-twitter fa-lg"></i></li>
+        <li class="ms-3"><a class="text-white" href="https://www.instagram.com"><i class="fab fa-instagram fa-lg"></i></li>
+        <li class="ms-3"><a class="text-white" href="https://www.facebook.com"><i class="fab fa-facebook fa-lg"></i>
+      </ul>
     </footer>
   </div>
 
@@ -244,6 +145,7 @@
 
   <!--custom js-->
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/offcanvas.js"></script>
 
 
 </body>
