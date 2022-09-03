@@ -1,7 +1,7 @@
 html,
 body {
   overflow-x: hidden; /* Prevent scroll on narrow devices */
-  background: url('/assets/images/pexels-fabien-burgue-2052521.jpg') no-repeat center center fixed;
+  /* background: url('/assets/images/pexels-fabien-burgue-2052521.jpg') no-repeat center center fixed; */
   background-size: cover;
   color: rgb(32, 56, 34);
   font-family: 'Lato';
