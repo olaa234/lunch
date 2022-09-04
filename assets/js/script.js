@@ -17,12 +17,6 @@ $(document).ready(function () {
     })
 })
 
-
-function toggleText(){
-    let paragraph = document.getElementById("readmore");
-    if (paragraph.style.display === "none") {
-      paragraph.style.display = "block";
-    } else {
-      paragraph.style.display = "none";
-    }
-  }
+function show() {
+    document.getElementById("readmore").style.display = "block";
+}

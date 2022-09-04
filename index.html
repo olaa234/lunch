@@ -18,6 +18,7 @@
   <!-- Custom styles for this template -->
   <link rel="stylesheet" href="./assets/css/custom.css">
   <link rel="stylesheet" href="./assets/css/offcanvas.css">
+  <link rel="stylesheet" href="./assets/css/globe.css">
 </head>
 
 <body class="bg-light">
@@ -58,36 +59,35 @@
     </div>
   </nav>
 
-  <hr>
-
   <!--Main Section-->
   <main>
 
 
-    <div class="container col-xxl-8 px-2 py-2">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-3">
+    <div class="container-fluid col-xxl-8 px-5 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 mx-5 font-bold">
         <div class="col-10 col-sm-8 col-lg-6">
-          <img src="./assets/images/earthpic.jpg" class="d-block mx-lg-auto img-fluid rounded-circle"
-            alt="Earth image from outside space" width="300" height="500" loading="lazy">
+          <!-- <img src="./assets/images/earthpic.jpg" class="d-block mx-lg-auto img-fluid rounded-circle"
+            alt="Earth image from outside space" width="300" height="500" loading="lazy"> -->
+            <div id="chartdiv"></div>
+
         </div>
 
         <div class="col-lg-6">
-          <h1 class="display-5 fw-bold lh-1 mb-3 mt-3">Rescue our Planet, Rescue our future</h1>
+          <h1 class="display-5 fw-bolder lh-1 mb-3 mt-3">Rescue our Planet, Rescue our future</h1>
 
-          <p class="lead">
+          <p class="lead fw-light">
             As a non-governmental Organization, it is our obligation to bring to the fore front of our
             discussions on one of the most pressing issues affecting our dear planet in recent years. According to the
             2022 UN report there was much greater evidence of increasing human influence on climate change,
               largely
               due to an increase in greenhouse gas emissions.
-              
-            <a href="#" onclick="toggleText()">Click to Read More... </a>                 
-             
+                       <br>       
+             <small><a href="#"onclick="show()">Click to Read More... </a></small>
             </p>             
   
 
 
-          <p  id="readmore"><quote> The latest scientific data pointed to increasing average
+          <p class="lead" id="readmore" style="display:none"><quote> The latest scientific data pointed to increasing average
               global temperatures, with particular acceleration in the last two decades; changes in precipitation
               patterns; an increase in the intensity of cyclone activity; rising sea levels; and a decline in Northern
               Hemisphere snow cover, as well as in the size and mass of glaciers.</quote>, from critical analysis and
@@ -250,6 +250,16 @@
   <!--custom js-->
   <script src="./assets/js/script.js"></script>
   <script src="./assets/js/offcanvas.js"></script>
+
+  <!--Rotating Globe-->
+  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+  <script src="//cdn.amcharts.com/lib/5/themes/Responsive.js"></script>
+  <script src="./assets/js/globe.js"></script>
+
+
 
 
 </body>
