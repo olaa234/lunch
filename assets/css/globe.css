@@ -1,4 +1,6 @@
-  #chartdiv {
+
+/*Rotating globe from https://www.amcharts.com/demos/rotating-globe/*/
+#chartdiv {
     width: 100%;
     height: 450px;
     max-width: 100%;

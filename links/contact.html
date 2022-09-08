@@ -1,76 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Enter your description here" />
-    <!--Boostrap Css-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+<!--Boostrap Css-->
+
+<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
 
 
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="../assets/css/custom.css">
-    <title>Title</title>
+<!-- Custom styles for this template -->
+<link rel="stylesheet" href="../assets/css/custom.css">
+<link rel="stylesheet" href="../assets/css/offcanvas.css">
+<title>Register</title>
 </head>
-
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark px-5" aria-label="Main navigation">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">R-O-P-N</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a href="/index.html" class="nav-link active bg-primary">Home</a></li>
-
-                    <li class="nav-item">
-                        <a href="/links/register.html" class="nav-link">Join</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/links/contact.html" class="nav-link">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/links/donate.html" class="nav-link" aria-current="page">Donate</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Mission
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="/links/our_mission.html">Our Mission</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="/links/climate_awarness.html">Climate Awarness</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="/links/news.html">News Blog</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="/links/project_green.html">Project Green</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                        </ul>
-                    </li>
+          <a class="navbar-brand text-success" href="../index.html"><i class="fas fa-home fa-lg"></i></a>
+          <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/links/register.html">Join</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://donate.stripe.com/test_5kAfZq49T4uQcBqaEE">Donate</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Mission</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/links/our_mission.html">Our Mission</a></li>
+                  <li><a class="dropdown-item" href="/links/climate_awarness.html">Climate Awareness</a></li>
+                  <li><a class="dropdown-item" href="/links/news.html">News</a></li>
+                  <li><a class="dropdown-item" href="/links/project_green.html">Project Green</a></li>
                 </ul>
-            </div>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
-    <!--Boostrap Script-->
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+      </nav>
+    
+    <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div> 
 
-    <!--custom js-->
-    <script src="./assets/js/script.js"></script>
+ <!--Footer Section-->
+
+ <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap" /></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Ola & Seun, HI-Project</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-white" href="https://www.twitter.com"><i class="fab fa-twitter fa-lg"></i></li>
+        <li class="ms-3"><a class="text-white" href="https://www.instagram.com"><i class="fab fa-instagram fa-lg"></i>
+        </li>
+        <li class="ms-3"><a class="text-white" href="https://www.facebook.com"><i class="fab fa-facebook fa-lg"></i>
+      </ul>
+    </footer>
+  </div>
+
+  <!--Boostrap Script-->
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+  <!--custom js-->
+  <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/offcanvas.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
-
 </html>
