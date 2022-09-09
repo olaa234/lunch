@@ -1,0 +1,14 @@
+
+
+POST http://localhost:8890/users
+Content-Type: application/json
+
+{
+    "name": "ola",
+    "email": "ola@example.com",
+    "password": 12345
+}
+
+####
+
+GET http://localhost:8890/users
